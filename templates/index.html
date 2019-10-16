@@ -1,0 +1,12 @@
+<!-- templates/playlists_index.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Reviews</h1>
+    {% for review in reviews %}
+        <h2>{{ review.restaurant }}</h2>
+        <small>{{ review.address }}</small>
+        <p>{{ review.review }}</p>
+        <p>Rating: {{ review.rating }} out of 5</p>
+    {% endfor %}
+{% endblock %}
