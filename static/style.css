@@ -1,32 +1,135 @@
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: white;
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+
+body {
+    color: #374046;
+    background-color: white;
+    font-size: 1.15em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Navbar links */
-#navbar a {
-  float: left;
+h4, p {
+    text-align: center;
+}
+
+.logo_header, .logo_footer {
   display: block;
-  color: black;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  max-width: 290px;
+  min-width: 260px;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+.logo_footer {
+    padding-bottom: 25px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
+.masonry-holder {
+    column-count: 4;
+    column-gap: 20px;
+    padding: 30px;
+}
+
+.masonry-block {
+    border-radius: 5px 5px 5px 5px;
+    border: 5px solid rgba(255, 255, 255, .5);
+    box-shadow: 1px 1px 3px black;
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    margin: 0 0 15px;
+    width: auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .masonry-holder {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .masonry-holder {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .masonry-holder {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .masonry-holder {
+        column-count: 4;
+    }
+}
+
+
+.card-img {
+    /* border-radius: 10px 10px 10px 10px; */
+    min-width: 250px;
+    max-width: 300px;
+}
+
+
+html, body {
+  font-family: 'Dosis';
+  font-weight: 300;
+}
+
+.header {
   width: 100%;
+  /* border-bottom: .5px solid black; */
+  text-align: right;
+  position: relative;
+
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+.link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  font-weight: 800;
+  font-size: 15px;
+
+  .bar {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 300ms;
+  }
+
+  &:hover {
+    .bar {
+      opacity: 1;
+      bottom: 5px;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

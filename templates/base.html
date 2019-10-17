@@ -2,17 +2,34 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <title>Reviews</title>
-  <link rel="stylesheet" href="./static/style.css">
+
+    <meta charset='utf-8'>
+    <title>Out with Dad</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./static/style.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
     {% include 'partials/navbar.html' %}
 
-    {% block content %}
-        BODY CONTENT GOES HERE
-    {% endblock %}
+    <div class='logo'>
+        <img src='./static/logo.png' alt='logo' class='logo_header'>
+        <img src='./static/footer.png' alt='logo' class='logo_footer'>
+    </div>
+
+
+    {% block content %}{% endblock %}
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
 </body>
 </html>
