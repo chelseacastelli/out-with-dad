@@ -9,10 +9,59 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* INDEX  */
-h5, h4, p {
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Dosis';
+}
+
+h2, h4, h5, p {
     text-align: center;
     font-size: 13px;
+    font-family: 'Dosis';
+}
+
+.about-p, .about-h {
+    /* text-align: center; */
+    font-size: 19px;
+    font-family: 'Dosis';
+    text-align: left;
+    /* float: right; */
+}
+
+.text-container {
+    position: absolute;
+    top: 62%;
+    right: 41%;
+    width: 360px;
+    height: 500px;
+    margin-top: -250px;
+    margin-right: -250px;
+    /* float: right; */
+}
+
+.img-container {
+    position: absolute;
+    padding: 10px;
+    top: 62%;
+    left: 36%;
+    width: 433px;
+    height: 870px;
+    margin-top: -250px;
+    margin-left: -250px;
+    box-shadow: 1px 1px 3px grey;
+    /* background: black; */
+    /* float: left; */
+    /* vertical-align: left;
+    width: 55%;
+    padding: 10px;
+    max-width: 400px;
+    min-width: 300px; */
+}
+
+.about-pic {
+    padding: 15px;
 }
 
 .logo_header, .logo_footer {
@@ -22,6 +71,10 @@ h5, h4, p {
   width: 35%;
   max-width: 300px;
   min-width: 300px;
+}
+
+.logo_header {
+    padding-top: 40px;
 }
 
 .logo_footer {
@@ -91,7 +144,7 @@ html, body {
   position: sticky;
   top: 0;
   background-color: white;
-  padding-bottom: 35px;
+  /* padding-bottom: 5px; */
 }
 
 .link {

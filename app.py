@@ -47,15 +47,22 @@ def restaurant_new():
 def restaurants_submit():
     """Submit new restaurant."""
     review = {
-        'restaurant': request.form.get('restaurant'),
-        'address': request.form.get('address'),
+        'restaurant': request.form.get('name'),
+        'address': request.form.get('add'),
         'rating': request.form.get('rating'),
         'review': request.form.get('review'),
-        'image': request.form.get('image')
-
+        'image': request.form.get('pic')
     }
+
+
     review_id = reviews.insert_one(review).inserted_id
     return redirect(url_for('index', review_id=review_id))
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    file = request.files['pic']
+
+    return file.filename
 
 @app.route('/restaurants/<review_id>')
 def restaurants_show(review_id):

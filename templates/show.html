@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<div class='masonry-holder'>
+    {% for review in reviews %}
+        <div class='masonry-block'>
+            <a href='/restaurants/{{ review._id }}'><h4>{{ review.restaurant }}</h4></a>
+            <p> {{ review.address }} </p>
+                <img class='card-img' src={{review.image}}>
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
