@@ -16,7 +16,7 @@ reviews.drop()
 # { 'restaurant': '', 'address': '', 'review': '', 'rating': '', 'image': '' },
 
 db.reviews.insert_many([
-    { 'restaurant': 'Maizal Restaurant & Tequila Bar', 'address': '990 Bay St, Staten Island, NY 10305', 'review': 'The best tableside guac, hands down', 'rating': '5', 'image': './static/maizal.png' },
+    { 'restaurant': 'Maizal Restaurant & Tequila Bar', 'address': '990 Bay St, Staten Island, NY 10305', 'review': 'The best tableside guac, hands down', 'rating': '5', 'image': './static/maizal.png'},
     { 'restaurant': 'Jose Tejas', 'address': '700 US-1, Iselin, NJ 08830', 'review': 'Cheap, delicious, and fun!', 'rating': '5', 'image': './static/jose.png' },
     { 'restaurant': 'DeLuca\'s Italian Restaurant', 'address': '7324 Amboy Rd, Staten Island, NY 10307', 'review': 'Come for the drinks, stay for the meatballs', 'rating': '5', 'image': './static/delucas.png' },
     { 'restaurant': 'Patrizia\'s of Staten Island', 'address': '4255 Amboy Rd, Staten Island, NY 10308', 'review': 'One of my favorite Italian restaraunts. The burrata!', 'rating': '5', 'image': './static/pats.png' },
@@ -51,24 +51,43 @@ def restaurants_submit():
         'address': request.form.get('add'),
         'rating': request.form.get('rating'),
         'review': request.form.get('review'),
-        'image': request.form.get('pic')
+        # 'image': request.form.get('pic')
     }
 
-
     review_id = reviews.insert_one(review).inserted_id
-    return redirect(url_for('index', review_id=review_id))
+    return redirect(url_for('restaurants_show', review_id=review_id))
 
-@app.route('/upload', methods=['POST'])
-def upload():
-    file = request.files['pic']
+# @app.route('/upload', methods=['POST'])
+# def upload_image():
+#
+#     if request.method == "POST":
+#
+#         if request.files:
+#
+#             image = request.files["image"]
+#
+#             print(image)
+#
+#             return redirect(request.url)
 
-    return file.filename
 
 @app.route('/restaurants/<review_id>')
 def restaurants_show(review_id):
     review = reviews.find_one({'_id': ObjectId(review_id)})
     return render_template('show.html', review=review)
 
+@app.route('/restaurants/<review_id>/delete', methods=['POST'])
+def restaurants_delete(review_id):
+    """Delete one restaurant."""
+    reviews.delete_one({'_id': ObjectId(review_id)})
+    return redirect(url_for('index'))
+
+
+@app.route('/search', methods=['GET','POST'])
+def search():
+    if request.method == 'POST':
+        search = request.form['query']
+    pass
 
 @app.route('/account')
 def account():

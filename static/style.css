@@ -222,6 +222,7 @@ hr {
   opacity: 0.9;
 }
 
+
 .submit:hover, .registerbtn:hover {
   opacity:1;
 }
@@ -362,7 +363,7 @@ fieldset {
     position: absolute;
     /* float: right; */
     top: 12px;
-    right: 480px;
+    right: 455px;
     width: 15%;
 }
 
@@ -370,7 +371,17 @@ input[type=text] {
     font-size: 15px;
 }
 
+.searchbtn {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-family: 'Dosis';
+    top: 17px;
+    height: 35%;
+    right: 10px;
+    width: 15%;
 
+}
 
 
 
