@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method='POST' action='/restaurants'>
+    <form action="action_page.php">
+      <div class="container">
+        <h1>Submit Restaurant</h1>
+        <p>Don't see your favorite place? Submit it here!</p>
+        <hr>
+
+        <label for="restaurant"><b>Name</b></label>
+        <input type="text" placeholder="Restaurant Name" name="name" value='{{ review.restaurant }}' required>
+
+        <label for="address"><b>Address</b></label>
+        <input type="text" placeholder="Restaurant Address" name="add" value='{{ review.address }}' required>
+
+        <label for="rating"><b>Rating</b></label>
+        <input type="text" placeholder="Rating 1 - 5" name="rating" value='{{ review.rating }}' required>
+
+        <label for="review"><b>Review</b></label>
+        <input tabindex="5" type="text" placeholder="Leave your review here.." name="review" value='{{ review.review }}' required>
+
+        <label for="image"><b>Upload Image</b></label>
+        <input type="file" name="pic" value='{{ review.image }}' accept="image/*">
+        </form>
+
+        <hr>
+
+
+        <button type="submit" class="submit">Submit</button>
+      </div>
+</form>
+
+
+{% endblock %}
