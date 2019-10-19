@@ -29,6 +29,7 @@ db.reviews.insert_many([
     { 'restaurant': 'Violette\'s Cellar', 'address': '2271 Hylan Blvd, Staten Island, NY 10306', 'review': 'The decor of this place is one of my favorites. Food is tapas style and pretty good.', 'rating': '3.5', 'image': './static/vc.png'}
 ])
 
+
 @app.route('/')
 def index():
     """Return homepage."""

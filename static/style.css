@@ -33,7 +33,7 @@ h2, h4, h5, p {
 .text-container {
     position: absolute;
     top: 62%;
-    right: 41%;
+    right: 43%;
     width: 360px;
     height: 500px;
     margin-top: -250px;
@@ -45,19 +45,12 @@ h2, h4, h5, p {
     position: absolute;
     padding: 10px;
     top: 62%;
-    left: 36%;
+    left: 38%;
     width: 433px;
     height: 870px;
     margin-top: -250px;
     margin-left: -250px;
     box-shadow: 1px 1px 3px grey;
-    /* background: black; */
-    /* float: left; */
-    /* vertical-align: left;
-    width: 55%;
-    padding: 10px;
-    max-width: 400px;
-    min-width: 300px; */
 }
 
 .about-pic {
@@ -74,7 +67,7 @@ h2, h4, h5, p {
 }
 
 .logo_header {
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .logo_footer {
@@ -83,8 +76,9 @@ h2, h4, h5, p {
 
 .masonry-holder {
     column-count: 4;
-    column-gap: 20px;
-    padding: 30px;
+    column-gap: 15px;
+    padding-left: 22px;
+    padding-top: 30px;
 }
 
 .masonry-block {
@@ -125,8 +119,8 @@ h2, h4, h5, p {
 
 .card-img {
     /* border-radius: 10px 10px 10px 10px; */
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 290px;
+    max-width: 340px;
 }
 
 
@@ -365,6 +359,7 @@ fieldset {
     top: 12px;
     right: 455px;
     width: 15%;
+    font-family: 'Dosis';
 }
 
 input[type=text] {
@@ -379,7 +374,7 @@ input[type=text] {
     top: 17px;
     height: 35%;
     right: 10px;
-    width: 15%;
+    width: 13%;
 
 }
 
