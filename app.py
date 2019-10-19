@@ -72,7 +72,7 @@ def restaurants_submit():
 #             return redirect(request.url)
 
 
-@app.route('/restaurants/<review_id>')
+@app.route('/<review_id>')
 def restaurants_show(review_id):
     review = reviews.find_one({'_id': ObjectId(review_id)})
     return render_template('show.html', review=review)
