@@ -51,7 +51,7 @@ def restaurants_submit():
         'restaurant': request.form.get('name'),
         'address': request.form.get('add'),
         'rating': request.form.get('rating'),
-        'review': request.form.get('review'),
+        'review': request.form.get('review')
         # 'image': request.form.get('pic')
     }
 
@@ -65,7 +65,7 @@ def restaurants_submit():
 #
 #         if request.files:
 #
-#             image = request.files["image"]
+#             image = request.files["pic"]
 #
 #             print(image)
 #
