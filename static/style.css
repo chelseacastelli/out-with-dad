@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     font-size: 20px;
     font-family: 'Dosis';
+    padding-top: 10px;
 }
 
 h4 {
@@ -39,8 +40,8 @@ h2, h5, p {
 
 .text-container {
     position: absolute;
-    top: 62%;
-    right: 43%;
+    top: 67%;
+    right: 42.5%;
     width: 360px;
     height: 500px;
     margin-top: -250px;
@@ -51,7 +52,7 @@ h2, h5, p {
 .img-container {
     position: absolute;
     padding: 10px;
-    top: 62%;
+    top: 67%;
     left: 38%;
     width: 433px;
     height: 870px;
