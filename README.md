@@ -16,5 +16,8 @@ I usually have dinner with my Dad once a week. Because of this we've been to A L
 ## Outline
 A restaurant review platform that allows users to leave comments on an already existing review (by my Dad & I). If a restaurant is not present on the site, users can submit it.
 Technologies: Python, Flask, MongoDB, HTML, CSS, & Bootstrap
+</br>
+Live on Heroku
 
-
+## Demo It
+[Out w/ Dad](https://out-with-dad-cc.herokuapp.com/)
