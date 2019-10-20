@@ -7,6 +7,7 @@ body {
     font-size: 1.18em;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    padding-bottom: 85px;
 }
 
 
@@ -128,12 +129,24 @@ h2, h5, p {
 }
 
 .card-img {
-    /* border-radius: 10px 10px 10px 10px; */
     min-width: 290px;
     max-width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.card-img-one {
+    position: absolute;
+    /* padding: 10px; */
+    top: 73%;
+    left: 54%;
+    min-width: 290px;
+    max-width: 400px;
+    margin-top: -250px;
+    margin-left: -250px;
+    /* box-shadow: 1px 1px 3px grey; */
+    padding-bottom: 35px;
 }
 
 
@@ -146,12 +159,10 @@ html, body {
 .header {
   width: 100%;
   text-align: right;
-  /* position: relative; */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
-  /* padding-bottom: 5px; */
 }
 
 .link {
