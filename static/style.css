@@ -41,8 +41,8 @@ h2, h5, p {
 
 .text-container {
     position: absolute;
-    top: 67%;
-    right: 42.5%;
+    top: 72%;
+    right: 41.5%;
     width: 360px;
     height: 500px;
     margin-top: -250px;
@@ -53,8 +53,8 @@ h2, h5, p {
 .img-container {
     position: absolute;
     padding: 10px;
-    top: 67%;
-    left: 38%;
+    top: 72%;
+    left: 36%;
     width: 433px;
     height: 870px;
     margin-top: -250px;
@@ -138,14 +138,13 @@ h2, h5, p {
 
 .card-img-one {
     position: absolute;
-    /* padding: 10px; */
     top: 73%;
     left: 54%;
     min-width: 290px;
     max-width: 400px;
     margin-top: -250px;
     margin-left: -250px;
-    /* box-shadow: 1px 1px 3px grey; */
+    /* box-shadow: 0px 1px 3px grey; */
     padding-bottom: 35px;
 }
 
