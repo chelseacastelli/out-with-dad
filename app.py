@@ -58,19 +58,6 @@ def restaurants_submit():
     review_id = reviews.insert_one(review).inserted_id
     return redirect(url_for('restaurants_show', review_id=review_id))
 
-# @app.route('/upload', methods=['POST'])
-# def upload_image():
-#
-#     if request.method == "POST":
-#
-#         if request.files:
-#
-#             image = request.files["pic"]
-#
-#             print(image)
-#
-#             return redirect(request.url)
-
 
 @app.route('/<review_id>')
 def restaurants_show(review_id):

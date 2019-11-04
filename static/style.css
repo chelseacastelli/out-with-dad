@@ -39,27 +39,27 @@ h2, h5, p {
     /* float: right; */
 }
 
-.text-container {
-    position: absolute;
-    top: 74%;
-    right: 41.5%;
-    width: 360px;
-    height: 500px;
-    margin-top: -250px;
-    margin-right: -250px;
-    /* float: right; */
-}
-
 .img-container {
     position: absolute;
     padding: 10px;
-    top: 74%;
-    left: 36%;
+    top: 64%;
+    left: 38%;
     width: 433px;
     height: 870px;
     margin-top: -250px;
     margin-left: -250px;
     box-shadow: 1px 1px 3px grey;
+}
+
+.text-container {
+    position: absolute;
+    top: 64%;
+    right: 42.5%;
+    width: 360px;
+    height: 500px;
+    margin-top: -250px;
+    margin-right: -250px;
+    /* float: right; */
 }
 
 .about-pic {
